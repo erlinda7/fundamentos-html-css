@@ -1,0 +1,32 @@
+extensiones para visual studio
+https://jonmircha.com/vscode
+atajos windows
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+
+config.json de visual code: file>preferences> settigns y el icono de arriba derecho abrir y pegar
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "material-ui-snippets.showNotesOnStartup": false,
+  
+  "editor.wordWrap": "on", /*para que salga scroll horizontal y se acomode*/
+  "editor.insertSpaces": true, /**/
+  "editor.detectIndentation": false, /**/
+  "editor.renderWhitespace": "all", /**/
+  "editor.tabSize": 2,
+  "emmet.syntaxProfiles": {
+    "javascript": "html"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html"
+  },
+  "files.autoSave": "onFocusChange", /*autoguardado*/
+  "editor.formatOnPaste": true,
+  // "editor.formatOnSave": true,  /*cada que guarde lo formatee*/
+  /*  "[html]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "vscode.html-language-features"
+    }, */
+}
