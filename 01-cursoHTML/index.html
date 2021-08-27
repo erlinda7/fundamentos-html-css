@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--entre 55 y 65 caracteres-->
+  <title>Aprendiendo HTML</title>
+  <!--no mas de 165 caracteres-->
+  <meta name="description" content="En esta pagina estamos aprendiendo fundamentos de html">
+
+  <link rel="stylesheet" href="assets/estilos.css">
+
+
+
+  <!--/////////////
+    metas-seo
+    hacen campañas con descuentos, 
+    los links son diferentes para los usuarios, 
+    pero el navegador sabe que esta es la que este es el link, url canonica
+  -->
+  <link rel="canonical" href="http://tudominio.com/la-url-canonica">
+
+  <!-- 
+    otra meta etiqueta para moviles o computadora
+    la imagen que viene en el navegador a lado del titulo
+    tiene que ser cuadrada y grande-->
+  <!--pc-->
+  <link rel="icon" href="img/favicon.png">
+  <!--moviles-->
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <meta name="theme-color" content="#FF6600">
+
+  <!--para redes sociales , para publicar nuestro sitio en redes sociales-->
+  <meta property="og:title" content="Aprendiendo HTML">
+  <meta property="og:description" content="En esta pagina estamos aprendiendo fundamentos de html">
+  <!--la ruta absoluta donde se va encontrar la imagen en tu dominio-->
+  <meta property="og:image" content="https://tudominio.com/img/periodic-table-of-html-elements.png">
+  <meta property="og:url" content="https://tudominio.com/index.html">
+  <meta property="twitter:card" content="summary">
+  <meta property="og:site" content="@jonmircha">
+
+  <style>
+    h2 {
+      color: orange;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <h2 id="inicio">Aprendiendo html</h2>
+    <p>Hola, escribiendo mi primer documento html</p>
+    <p>Aprendiendo sobre diseño web</p>
+
+    <h3>Temario del curso</h3>
+    <ul>
+      <li><a href="index.html#encabezados">Encabezados html</a></li>
+      <li><a href="index.html#texto-basico">Etiquetas de texto basico</a></li>
+      <li><a href="index.html#texto-semantico">Etiquetas de texto sematicas</a></li>
+      <li><a href="index.html#saltos">Etiquetas de saltos</a></li>
+      <li><a href="index.html#formateo">Etiquetas de formateo</a></li>
+      <li><a href="index.html#estructurales">Etiquetas semanticas estructurales</a></li>
+      <li><a href="index.html#bloque-linea">Etiquetas de Bloque VS etiquetas de linea</a></li>
+      <li><a href="index.html#estilos">Estilos CSS en HTML</a></li>
+      <li><a href="index.html#scripts">Scripts en HTML</a></li>
+      <li><a href="index.html#imagenes">Imagenes</a></li>
+      <li><a href="index.html#vectores">SVG - vectores</a></li>
+      <li><a href="index.html#figuras">Figuras</a></li>
+      <li><a href="index.html#ordenadas">Listas ordenasdas</a></li>
+      <li><a href="index.html#desordenadas">Listas desordenadas</a></li>
+      <li><a href="index.html#listas-definicion">Listas de definicion</a></li>
+      <li><a href="index.html#tablas">Tablas</a></li>
+      <li><a href="index.html#enlaces">Enlaces</a></li>
+      <li><a href="index.html#enlaces-internos">Enlaces internos</a></li>
+      <li><a href="index.html#interactivos">Elementos interactivos</a></li>
+      <li><a href="index.html#audio-video">Elementos multimedia audio y video</a></li>
+      <li><a href="index.html#iframe">Iframes</a></li>
+      <li><a href="index.html#formularios">Elementos de Formularios</a></li>
+      <li><a href="index.html#atributos">Atributos de Inputs y formularios</a></li>
+      <li><a href="index.html#data-attributes"> Data Attributes</a></li>
+      <li><a href="index.html#metas-seo"> Metas Etiquetas para SEO</a></li>
+      <li><a href="index.html#accesibilidad">accesibilidad web</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <!--salto semantico de contenido entre bloques de contenido, sirve para separar como secciones -->
+    <hr>
+    <h2 id="encabezados">Encabezados html</h2>
+    <h1>Encabezado de nivel 1- solo 1 h1 por documento html</h1>
+    <h2>Encabezado de nivel 2</h2>
+    <h3>Encabezado de nivel 3</h3>
+    <h4>Encabezado de nivel 4</h4>
+    <h5>Encabezado de nivel 5</h5>
+    <h6>Encabezado de nivel 6</h6>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="texto-basico">Etiquetas de texto basico</h2>
+    <p>Un parrafo</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero minus minima quod neque voluptate dolorem, eos
+      odit fugiat iure a doloremque enim nostrum unde facilis pariatur tenetur architecto aperiam doloribus.
+    </p>
+    <p>
+      Palabras en : <b>negrita</b>, <i>italica o cursiva</i>, <u>subrayado</u>,
+      e=mc <sup>2</sup>, H<sub>2</sub>O,
+      <mark>marcatexto</mark>, <small>letras pequeñas</small>
+    </p>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="texto-semantico">Etiquetas de texto sematicas</h2>
+    <p>
+      <strong>Este texto es importante</strong>. <em>Este texti hace enfasis</em>
+    </p>
+    <blockquote>Yo solo sé, que no se nada</blockquote>
+    <!--para mencionar que alguien dijo-->
+    <cite>Socrates</cite>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="saltos">Etiquetas de saltos</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Maiores, voluptatibus quisquam. <br>Tempore et
+      excepturi assumenda alias, qui eum maiores, eos, expedita consectetur necessitatibus illo in esse quod officia ab
+      omnis.
+    </p>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="foramteo">Etiquetas de formateo</h2>
+    <p>
+    <pre>
+            Tareas por hacer
+              -HTML
+                - terminar de grabar las secciones de este curso.
+                - editar en un solo video
+              -CSS
+                -Comenzar a grabar secciones de ccss
+                -Comenzar a grabar
+          </pre>
+    </p>
+    <p>
+      <code>
+        Este texto esta en formato de codigo
+      </code>
+    </p>
+    <p>
+    <pre>
+      <code>
+        import React from "react";
+        import Title from "./Title";
+        
+        function App {
+          return
+          &lt;Title /&gt;
+        }
+      </code>
+    </pre>
+    </p>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="estructurales">Etiquetas semanticas estructurales</h2>
+    <div>div - Es una etiqueta contenedora que no tiene semantica</div>
+    <header>header - cabecera de un sitio web o de una seccion </header>
+    <main>main - Define la seccion principal del documento, solo puede existir una etiqueta main por documento</main>
+    <footer>footer - Pie de pagina de una sitio web o de una seccion</footer>
+    <nav>nav - Representa navegacion</nav>
+    <article>article - Representa una seccion autocontenido (que por si sola se explica)</article>
+    <aside>aside - Representa contenido complementario o secundario</aside>
+    <section>section - Representa una seccion de contenido generico</section>
+    <address>address - Representa una informacion de contacto</address>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="bloque-linea">Etiquetas de Bloque VS etiquetas de linea</h2>
+    <div style="background-color: yellow; color: red;">La etiqueta de bloque por excelencia es el - div, - una etiqueta
+      de
+      bloque es
+      aquella que genera saltos de linea
+      con sus etiquetas hermanas</div>
+    <span style="background-color: greenyellow;">La etiqueta de linea por excelencia es el - span - una etiqueta de
+      linea
+      solo
+      ocupa el espacio necesario que
+      tiene su contenido</span>
+    <span>Hola soy otra - span</span>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="estilos">Estilos CSS en HTML</h2>
+    <p>1ra mediante el atributo style="background-color: yellow; color: red;"</p>
+    <p>2da .1 abrir etiqueta style en el head - buena practica</p>
+    <p>2da .2 abrir etiqueta style en el body - mala practica</p>
+    <p>3ra mediante una hoja de estilos - crear a parte archivo .css , en el head la etiqueta link rel="stylesheet"
+      href="assets/estilos.css" - es la mejor</p>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="scripts">Scripts en HTML</h2>
+    <p>se debe pone en el body en la etiqueta script</p>
+    <p>Tu programacion este en un archivo separado y lo invocamos src="assets/codigos.js en la etiqueta script, es lo
+      recomendado, debe ir antes de cerrar el body</p>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="imagenes">Imagenes</h2>
+    <p>jpg, png, svg, gif</p>
+    <img src="img/periodic-table-of-html-elements.png" alt="Tabla Periodica de los elementos HTML" width="600"
+      height="400">
+    <img src="img/periodic-table-of-html-elements.png" alt="Tabla Periodica de los elementos HTML">
+
+    <img src="img/puesta-sol.jpg" alt="Puesta de sol y kenai">
+    <img src="img/this-is-fine.gif" alt="Meme del perro this is fine">
+    <img src="img/kEnAi.svg" alt="kEnAi">
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="vectores">SVG - vectores</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1"
+      x="0px" y="0px" viewBox="0 0 440.899 440.899" style="enable-background:new 0 0 440.899 440.899;"
+      xml:space="preserve" width="512" height="512">
+      <g>
+        <g>
+          <path style="fill:#FF9500;"
+            d="M316.73,335.127c43.01,0,77.878-34.867,77.878-77.877v-62.152c0-28.842,19.65-53.088,46.292-60.1    c-11.112-22.113-33.989-37.297-60.424-37.297c-36.764,0-66.651,29.354-67.557,65.896h-0.043v93.652    c0,21.522-17.448,38.969-38.97,38.969c-13.067,0-24.624-6.438-31.694-16.307C251.918,311.867,281.603,335.127,316.73,335.127z" />
+          <path style="fill:#D8D2C4;"
+            d="M380.476,97.701c-29.021,0-53.743,18.297-63.32,43.976c8.007,29.934,35.305,51.982,67.764,51.982    c3.304,0,6.551-0.246,9.733-0.688c0.939-27.9,20.264-51.137,46.247-57.975C429.787,112.885,406.911,97.701,380.476,97.701z" />
+          <path style="opacity:0.2;fill:#222222;"
+            d="M322.771,271.219c-2.533-8.639-5.863-16.939-9.895-24.822v10.853    c0,21.522-17.448,38.969-38.97,38.969c-13.067,0-24.624-6.438-31.694-16.307c9.707,31.955,39.392,55.215,74.519,55.215    c10.257,0,20.041-2.002,29.009-5.605v-5.869C345.739,302.949,336.884,284.283,322.771,271.219z" />
+        </g>
+        <g>
+          <path style="fill:#FF9500;"
+            d="M131.331,258.99c-11.102,0-20.103,9-20.103,20.104v75.186H96.552    c-8.458,0-15.313,6.857-15.313,15.314c0,8.457,6.856,15.314,15.313,15.314h54.882V279.094    C151.434,267.99,142.433,258.99,131.331,258.99z" />
+          <path style="opacity:0.2;fill:#222222;"
+            d="M131.331,258.99c-11.102,0-20.103,9-20.103,20.104v75.186H96.552    c-8.458,0-15.313,6.857-15.313,15.314c0,8.457,6.856,15.314,15.313,15.314h54.882V279.094    C151.434,267.99,142.433,258.99,131.331,258.99z" />
+        </g>
+        <path style="fill:#FF9500;"
+          d="M184.919,178.164h-52.031v206.744h185.449v-73.326C318.336,237.897,258.603,178.164,184.919,178.164   z" />
+        <path style="fill:#FF9500;"
+          d="M184.919,178.164h-52.031v206.744h185.449v-73.326C318.336,237.897,258.603,178.164,184.919,178.164   z" />
+        <path style="fill:#FF9500;"
+          d="M184.919,178.164h-52.031v206.744h185.449v-73.326C318.336,237.897,258.603,178.164,184.919,178.164   z" />
+        <path style="opacity:0.2;fill:#222222;"
+          d="M265.985,262.395c-33.83,0-61.255,27.426-61.255,61.258c0,11.16,3,21.615,8.215,30.627   h-12.058c-8.458,0-15.314,6.857-15.314,15.314c0,8.457,6.856,15.314,15.314,15.314h126.354v-61.256   C327.241,289.82,299.816,262.395,265.985,262.395z" />
+        <path style="opacity:0.2;fill:#222222;"
+          d="M161.06,258.99c-11.103,0-20.103,9-20.103,20.104v75.186h-8.069v30.629h48.275V279.094   C181.162,267.99,172.162,258.99,161.06,258.99z" />
+        <g>
+          <g>
+            <path style="fill:#FF9500;"
+              d="M132.394,102.213c-4.433,2.82-4.191,7,0.535,9.291l80.032,38.787     c4.727,2.293,8.158-0.109,7.625-5.334l-8.508-83.305c-0.533-5.225-4.597-7.193-9.028-4.373L132.394,102.213z" />
+            <polygon style="fill:#D8D2C4;" points="198.971,124.311 195.009,85.502 162.09,106.436    " />
+            <path style="opacity:0.2;fill:#222222;"
+              d="M203.05,57.279l-70.656,44.934c-4.433,2.82-4.191,7,0.535,9.291l40.016,19.395     l36.081-74.449C207.39,55.656,205.265,55.867,203.05,57.279z" />
+          </g>
+          <g>
+            <path style="fill:#FF9500;"
+              d="M109.819,102.213c4.433,2.82,4.191,7-0.535,9.291l-80.032,38.787     c-4.727,2.293-8.158-0.109-7.625-5.334l8.508-83.305c0.533-5.225,4.597-7.193,9.028-4.373L109.819,102.213z" />
+            <polygon style="fill:#D8D2C4;" points="43.242,124.311 47.204,85.502 80.123,106.436    " />
+            <path style="opacity:0.2;fill:#222222;"
+              d="M33.187,56.449c0.001,0,0,0,0.002-0.002c-1.638,0.793-2.788,2.592-3.054,5.205     l-8.508,83.305c-0.533,5.225,2.898,7.627,7.625,5.334l40.016-19.393L33.187,56.449z" />
+          </g>
+          <path style="fill:#FF9500;"
+            d="M121.106,93.338C61.256,93.338,11.351,135.902,0,192.41c41.564,8.998,77.26,33.746,100.516,67.697    c0.008,0.01,0.016,0.008,0.023,0.02c4.332,6.779,11.925,11.275,20.568,11.275c8.636,0,16.224-4.49,20.558-11.26    c0.007-0.012,0.013-0.01,0.02-0.018c23.255-33.959,58.955-58.715,100.527-67.715C230.861,135.902,180.956,93.338,121.106,93.338z" />
+          <path style="fill:#D8D2C4;"
+            d="M44.218,120.184C21.875,137.975,5.838,163.348,0,192.41c41.564,8.998,77.26,33.746,100.516,67.697    c0.008,0.01,0.016,0.008,0.023,0.02c1.284,2.01,2.859,3.811,4.658,5.361c0.098-2.48,0.162-4.969,0.162-7.473    C105.358,203.354,81.77,154.203,44.218,120.184z" />
+          <path style="fill:#D8D2C4;"
+            d="M197.993,120.184c22.343,17.791,38.381,43.164,44.218,72.227    c-41.564,8.998-77.26,33.746-100.516,67.697c-0.007,0.01-0.015,0.008-0.023,0.02c-1.283,2.01-2.858,3.811-4.657,5.361    c-0.098-2.48-0.163-4.969-0.163-7.473C136.853,203.354,160.443,154.203,197.993,120.184z" />
+          <path style="fill:#333E48;"
+            d="M85.471,241.281c5.457,5.893,10.492,12.18,15.044,18.826c0.008,0.01,0.016,0.008,0.023,0.02    c4.332,6.779,11.925,11.275,20.568,11.275c8.636,0,16.224-4.49,20.558-11.26c0.007-0.012,0.013-0.01,0.02-0.018    c4.556-6.652,9.595-12.945,15.057-18.844H85.471z" />
+          <path style="opacity:0.2;fill:#222222;"
+            d="M0,192.41c41.564,8.998,77.26,33.746,100.516,67.697    c0.008,0.01,0.016,0.008,0.023,0.02c4.332,6.779,11.925,11.275,20.568,11.275V93.338C61.256,93.338,11.351,135.902,0,192.41z" />
+          <circle style="fill:#333E48;" cx="179.789" cy="173.137" r="7.463" />
+          <circle style="fill:#333E48;" cx="62.424" cy="173.137" r="7.463" />
+        </g>
+        <path style="fill:#FFA21F;"
+          d="M274.267,262.395c-33.831,0-61.255,27.426-61.255,61.258c0,11.16,3,21.615,8.215,30.627h-12.059   c-8.458,0-15.313,6.857-15.313,15.314c0,8.457,6.856,15.314,15.313,15.314h126.354v-61.256   C335.523,289.82,308.098,262.395,274.267,262.395z" />
+        <path style="fill:#FFA21F;"
+          d="M169.341,258.99c-11.102,0-20.102,9-20.102,20.104v75.186H133.54   c-8.457,0-15.313,6.857-15.313,15.314c0,8.457,6.856,15.314,15.313,15.314h55.903V279.094   C189.444,267.99,180.444,258.99,169.341,258.99z" />
+      </g>
+    </svg>
+
+    <img src="img/fox-svgrepo-com.svg" alt="zorrito">
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="figuras">Figuras</h2>
+    <figure>
+      <img src="img/periodic-table-of-html-elements.png" alt="Tabla de los elementos html">
+      <figcaption>Tabla de los elementos HTML</figcaption>
+    </figure>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+
+  <div>
+    <hr>
+    <h2 id="ordenadas">Listas ordenasdas</h2>
+    <h3>Las estaciones del año</h3>
+    <ol>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol start="3">
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol reversed>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <ol type="A">
+      <!--1, A, a, I, i-->
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="desordenadas">Listas desordenadas</h2>
+    <h3>Cosas por hacer</h3>
+    <ul>
+      <!--disc-->
+      <li>Terminar de grabe</li>
+      <li>Editar el video</li>
+      <li>Subir el video</li>
+    </ul>
+    <ul type="circle">
+      <li>Terminar de grabe</li>
+      <li>Editar el video</li>
+      <li>Subir el video</li>
+    </ul>
+    <ul type="square">
+      <li>Terminar de grabe</li>
+      <li>Editar el video</li>
+      <li>Subir el video</li>
+    </ul>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="listas-definicion">Listas de definicion</h2>
+    <p>dl - dt,dd - dl</p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Es un lenguaje de marcado que define el contenido de la web</dd>
+      <dt>CSS</dt>
+      <dd>Es un lenguaje de definicion que da estilos al codigo HTML</dd>
+      <dt>JavaScript</dt>
+      <dd>Es el lenguaje de la web</dd>
+    </dl>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="tablas">Tablas</h2>
+    <p>* table - tr- td- tr-table</p>
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>Constelacion</td>
+        <td>Tipo</td>
+      </tr>
+      <tr>
+        <td>Ikki</td>
+        <td>Fenix</td>
+        <td>Bronce</td>
+      </tr>
+      <tr>
+        <td>Shaina</td>
+        <td>Ofiuco</td>
+        <td>Plata</td>
+      </tr>
+      <tr>
+        <td>Saga</td>
+        <td>Geminis</td>
+        <td>Dorado</td>
+      </tr>
+    </table>
+
+    <br><br>
+    <p>* table- thead(tr-th)- tbody(tr-td)-tfoot(tr-th)</p>
+    <p>colspan="3" para combinar en columna</p>
+    <p>rowspan="2" para combinar filas</p>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">Tabla de los santos de atena</th>
+        </tr>
+        <tr>
+          <th>Nombre</th>
+          <th>Constelacion</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ikki</td>
+          <td>Fenix</td>
+          <td>Bronce</td>
+        </tr>
+        <tr>
+          <td>Mistry</td>
+          <td>Lagarto</td>
+          <td>Plata</td>
+        </tr>
+        <tr>
+          <td>Saga</td>
+          <td>Geminis</td>
+          <td>Dorado</td>
+        </tr>
+        <tr>
+          <td>Shaina</td>
+          <td rowspan="2">Ofiuco</td>
+          <td>Plata</td>
+        </tr>
+        <tr>
+          <td>Odiseo</td>
+          <td>Dorada</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3">
+            <small>Saint Seiya fue creado por Masani Kurumada</small>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="enlaces">Enlaces</h2>
+    <a href="hola.html">Hacia la pagina hola</a>
+    <br>
+    <p>enlace externo target="_blank"</p>
+    <p>rel="nofollow", para que indicar que no es parte de nuestro blog, o que nada que ver con mi contenido propio </p>
+    <a href="https://jonmircha.com/" target="_blank" rel="nofollow">Pagina externa Jhon mircha</a>
+    <br>
+    <p>link con imagenes</p>
+    <a href="https://jonmircha.com/cursos" target="_blank">
+
+      <img src="img/kEnAi.svg" alt="kEnAi" width="40" height="40">
+    </a>
+    <p>con codigo svg</p>
+    <a href="https://youtube.com/jonmircha" target="_blank">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+          fill="currentColor" />
+      </svg>
+    </a>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="enlaces-internos">Enlaces internos</h2>
+    <p>para navegar dentro el documento</p>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <p>mailto:, tel:,</p>
+    <h2>enlaces y protocolos especiales</h2>
+    <a href="mailto:hola@jonmircha.com">Enlace a correo electronico</a>
+    <br>
+    <a href="tel:59174565434">Enlace a telefono</a>
+    <br>
+    <a href="https://api.whatsapp.com/send?phone=59176584258&text=Hola" target="_blank">Enlace hacia whatsApp</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="interactivos">Elementos interactivos</h2>
+    <button onclick="alert('Hola has cliakeado el boton')">Este es un boton</button>
+    <br>
+    <p>Etiqueta details</p>
+    <br>
+    <details>
+      <summary>Titulo del acordeon</summary>
+      <article>
+        <h3>Contenido del acordeon</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eaque ullam, provident aut necessitatibus
+          error sit voluptates vel minus officiis molestiae dicta itaque, minima consequuntur explicabo beatae
+          voluptatem fugit illum.
+        </p>
+        <img src="img/puesta-sol.jpg" alt="puesta del sol">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet animi blanditiis explicabo saepe provident esse
+          eum non ipsam consectetur totam magni voluptate, accusantium commodi, ratione placeat quam est vel
+          consequatur.
+        </p>
+      </article>
+    </details>
+    <details open>
+      <summary>Titulo del acordeon</summary>
+      <article>
+        <h3>Contenido del acordeon</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam eaque ullam, provident aut necessitatibus
+          error sit voluptates vel minus officiis molestiae dicta itaque, minima consequuntur explicabo beatae
+          voluptatem fugit illum.
+        </p>
+        <img src="img/puesta-sol.jpg" alt="puesta del sol">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet animi blanditiis explicabo saepe provident esse
+          eum non ipsam consectetur totam magni voluptate, accusantium commodi, ratione placeat quam est vel
+          consequatur.
+        </p>
+      </article>
+    </details>
+    <dialog open>
+      Esto es una ventana modal html
+    </dialog>
+    <br>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="audio-video">Elementos multimedia audio y video</h2>
+    <p>sino pones atributo controls no aparece los controles</p>
+    <p>autoplay , reproduce automatico, en android no funciona por standar, funciona en algunos navegadores</p>
+    <p>loop, cuando termina a reproducir</p>
+    <p>muted, lo mutea</p>
+    <p>preload, aunque no le den play va empezar a cargar, se recomienda usar a veces el internet es lento por eso al
+      empezar que empize cargando</p>
+    <audio src="media/Feels-PatrickPatrikios.mp3" controls preload></audio>
+    <br>
+    <p>el video tiene los mismos atributos del audio</p>
+    <video src="media/kenai.mp4" controls preload poster="img/puesta-sol.jpg"></video>
+    <br>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="iframe">Iframes</h2>
+    <p>debes evitarlo y usar peticiones ajax</p>
+    <p>usar cuando quieras incrustar un elemento que venga de otra pagina</p>
+    <p>incrustar otro documento html</p>
+    <iframe src="hola.html" frameborder="1"></iframe>
+    <p>llamar una pagina externa</p>
+    <iframe src="https://jonmircha.com" frameborder="0"></iframe>
+    <p>no se puede llamar a todas las paginas algunas estan protegidas</p>
+    <iframe src="https://facebook.com" frameborder="0"></iframe>
+    <p>incustrar pdf</p>
+    <iframe src="media/emmet-cheat-sheet.pdf" frameborder="1"></iframe>
+    <p>incrustar mapa</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.576167849321!2d-66.23294368465153!3d-17.33598686737151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375359954b2f9%3A0xfa61771b08628a4c!2sHotel%20Regina%20Resort%20%26%20Convenciones!5e0!3m2!1ses!2sbo!4v1630092086391!5m2!1ses!2sbo"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <p>incustrar video de youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bBr4USSsyxc" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <br>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="formulario">Elementos de Formularios</h2>
+    <input type="text">
+    <br><br>
+    <input type="checkbox">
+    <br><br>
+    <input type="radio">
+    <br><br>
+    <input type="date">
+    <br><br>
+    <input type="color">
+    <br><br>
+    <input type="button" value="Boton">
+    <br><br>
+    <input type="submit">
+    <br><br>
+    <input type="reset">
+    <br><br>
+    <input type="file">
+    <br><br>
+    <p>seleccionar varios archivos</p>
+    <input type="file" multiple>
+    <br><br>
+    <p>elemento input oculto </p>
+    <input type="hidden" name="idioma" value="es">
+    <br><br>
+    <p>input email, cuando es pantalla tactil el teclado lo reconoce y te da teclado con @</p>
+    <input type="email">
+    <br><br>
+    <p>en un dispotivo tactil pone el teclado numerico</p>
+    <input type="number">
+    <br><br>
+    <p>input tel, para teclado telefonico</p>
+    <input type="tel">
+    <br><br>
+    <p>input password</p>
+    <input type="password">
+    <br><br>
+    <p>input search</p>
+    <input type="search">
+    <p>textarea</p>
+    <textarea cols="50" rows="5"></textarea>
+    <p>select</p>
+    <select>
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+      <option value="">PHP</option>
+    </select>
+    <p>select multiple</p>
+    <select multiple>
+      <option value="">HTML</option>
+      <option value="">CSS</option>
+      <option value="">JS</option>
+      <option value="">PHP</option>
+    </select>
+    <br><br>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="atributos">Atributos de Inputs y formularios</h2>
+    <p>readonly, disabled</p>
+    <input type="text" readonly value="jonmircha" disabled>
+    <p>placeholder</p>
+    <input type="text" placeholder="Escribe tu nombre">
+    <h3>Ejemplo de formulario</h3>
+    <h4>Formulario de login</h4>
+    <form action="https://jonmircha.com" method="GET">
+      <label for="usuario">Usuario:</label>
+      <input type="text" name="usuario" id="usuario" placeholder="escribe tu usuario" required pattern="^[A-Za-z]+$"
+        title="El campo solo acepta letras">
+      <br>
+      <input type="email" autocomplete="off">
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Escribe contaseña" required>
+      <br>
+      <input type="submit">
+      <!--  method="GET" envia por la url, https://jonmircha.com/?usuario=erlyusuario&password=1234ereer -->
+      <!-- name="usuario" es con el que se envia los datos-->
+      <!--  method="POST" envia en los headers oculto, https://jonmircha.com/ -->
+      <!--si no tiene action="https://jonmircha.com" se auto gestiona-->
+      <!--el envio de datos se realiza con javascript-->
+      <!--autocomplete="off", no aparecera el autocompletado de las ultimas opciones que escribi-->
+
+      <!-- id="usuario" se vincula for="usuario"  cuando presiona sobre el label el cursor se pone en su input correspondiente-->
+      <!-- pattern="^[A-Za-z]+$", cuando queremos solo letras o numeros o otro se usa expresiones regulares-->
+      <!-- title="El campo solo acepta letras" , cuando tratas de enviar con el formato incorrecto si tratas enviar numeros-->
+      <!--
+        <form action="https://jonmircha.com" method="GET" autocomplete="off">, autocomplete="off" puedes para el formulario completo o solo en un input en particular
+      -->
+      <br>
+      <input type="reset">
+    </form>
+    <br><br>
+    <h4>atributos de Formularios de Selects, Radios y checkboxs</h4>
+    <form action="">
+      <p>Elige tu idioma</p>
+      <select name="idioma" required>
+        <option value="">Elige una opcion</option>
+        <option value="es">Español</option>
+        <option value="en" selected>Ingles</option>
+        <option value="fr">Frances</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugues</option>
+      </select>
+      <br>
+      <select name="idiomamul" multiple>
+        <option value="">Elige una opcion</option>
+        <option value="es">Español</option>
+        <option value="en">Ingles</option>
+        <option value="fr">Frances</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugues</option>
+      </select>
+      <br>
+      <p>Elige tu lenguaje de programacion favorito</p>
+      <input type="radio" name="lenguaje" id="radio-js" value="js">
+      <label for="radio-js">JavaScript</label>
+      <input type="radio" name="lenguaje" id="radio-py" value="py">
+      <label for="radio-py">Python</label>
+      <input type="radio" name="lenguaje" id="radio-php" value="php" required>
+      <label for="radio-php">PHP</label>
+      <!-- name="lenguaje", tiene que el mismo en todo el grupo, los agrupa para que de varias opciones podamos seleccionar 1-->
+      <!-- checked, para que aparesca seleccionado-->
+      <!-- required, es suficiente con poner en 1 solo-->
+      <br>
+      <p>Elige tus intereses</p>
+      <label>
+        <input type="checkbox" name="intereses" value="deportes">
+        Deportes
+      </label>
+      <label for="">
+        <input type="checkbox" name="intereses" value="finanzas" checked>
+        Finanzas
+      </label>
+      <label for="">
+        <input type="checkbox" name="intereses" value="salud">
+        Salud
+      </label>
+      <label for="">
+        <input type="checkbox" name="intereses" value="politica" checked>
+        Politica
+      </label>
+      <label for="">
+        <input type="checkbox" name="intereses" value="ecologia">
+        Ecologia
+      </label>
+      <p>
+        <label>
+          <input type="checkbox" name="terminos" required>
+          ¿Aceptas terminos y condiciones?
+        </label>
+      </p>
+      <!-- name="intereses-ecologia", si son iguales en todos no importa no pasa nada-->
+      <br>
+      <input type="submit">
+      <input type="reset">
+    </form>
+
+    <h4>Formulario de contacto</h4>
+    <!-- https://formsubmit.co/-->
+    <form action="https://formsubmit.co/chambimanzanoerlinda@gmail.com" method="POST">
+      <input type="text" nombre="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Nombre solo acepta letras y espacios en blanco" required>
+      <br>
+      <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        required title="Formato de correo invalido">
+      <br>
+      <textarea name="comentario" cols="30" rows="10" required></textarea>
+      <br>
+      <input type="submit">
+    </form>
+    <br><br>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="data-attributes">Data attributes</h2>
+    <p>Atributos que nosotros mismos inventamos para las etiquetas, como los ids de usuarios </p>
+    <ul>
+      <li data-id="1" data-name="spring">Primavera</li>
+      <li data-id="2" data-name="summer">Verano</li>
+      <li data-id="3" data-name="autumn">Otoño</li>
+      <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <br>
+    <a href="index.html#inicio">👆</a>
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="metas-seo">Meta Etiquetas para SEO</h2>
+    <!--en el head esta-->
+  </div>
+
+  <div>
+    <hr>
+    <h2 id="accesibilidad">Accesibilidad Web</h2>
+    <h3 role="title">Las estaciones del año</h3>
+    <ul role="list">
+      <li tabindex="1" role="listitem">Primavera</li>
+      <li tabindex="2" role="listitem">Verano</li>
+      <li tabindex="3" role="listitem">Otoño</li>
+      <li tabindex="4" role="listitem">Invierno</li>
+      <!-- tabindex="3" para navegar con el tab segun su orden-->
+    </ul>
+
+    <a role="link" aria-label="en este enlace ncontraras mas informacion sobre las estaciones del año" href="#"> Mas
+      informacion</a>
+    <!--
+        https://web.dev/accessible/
+        https://html5accessibility.com/
+        https://www.w3.org/blog/news/archives/8889
+        https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/videos
+    -->
+  </div>
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <script>
+    console.log("Hola estamos aprendiendo HTMl");
+  </script>
+
+  <script src="assets/codigos.js"></script>
+
+</body>
+
+<!--25 imagenes-->
+</html6

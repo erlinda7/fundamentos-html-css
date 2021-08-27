@@ -1,0 +1,20 @@
+html {
+  scroll-behavior: smooth; /* para cuando los enlaces internos van hacia arriba o abajo se ve como un efecto de desplazamiento */
+}
+body {
+  font-family: sans-serif;
+}
+h1 {
+  color: blue;
+}
+
+img,
+video {
+  max-width: 100%;
+  min-height: auto;
+}
+
+iframe {
+  width: 80%;
+  height: 400px;
+}
