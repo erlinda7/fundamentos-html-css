@@ -1,0 +1,55 @@
+hijos directos: >
+hijos indirectos: espacio en blanco
+hermanos en general: ~
+hermano adyacente: +
+selector atributo: 
+  a[href] , 
+  a[target="_blank"], 
+  a[href*="jonmircha"], 
+  a[href^="http://"], 
+  a[href$=".com"], 
+  a[class~="cursos"],
+  a[class|="menu"]
+selector unversal: *, .selector-universal *
+pesudoclases: 
+  *:required, 
+  *:valid,
+  *:invalid,
+  *:focus,
+  *:disabled,
+  a:hover,
+  a:visited,
+  .p-pseudoclases:hove,
+  #temario-css:target,
+pesudoclases por posicion y tipo:
+  li:first-child 
+  li:last-child
+  li:nth-child(3)
+  li:nth-child(4n)
+  li:nth-child(3n + 1)
+  li:nth-child(even)
+  li:nth-child(odd)
+pseudoelementos:
+  ::before
+  ::after
+  ::first-letter
+  ::first-line
+  ::selection
+agrupar selectores: con coma
+  .form-agrupar-selectores input[type="text"],
+  .form-agrupar-selectores input[type="email"],
+  .form-agrupar-selectores textarea 
+
+Etiquetas y pseudoelementos-------------------------- 0,0,0,1
+  Clases, atributos y pseudoclases--------------------- 0,0,1,0
+  Indentificadores------------------------------------- 0,1,0,0
+  Estilos en linea------------------------------------- 1,0,0,0
+  !important-----------------------------Rompe la especificidad
+
+
+tipos de ancho de bordes
+/* thin - 1px, medium - 3px, thick - 5px */
+  border-width: 3px;
+  border-width: thin;
+/*solid, dotted, dashed, etc */
+  border-style: dotted;
