@@ -1,0 +1,28 @@
+.img {
+  max-width: 20%;
+  max-width: 100%;
+  height: auto;
+}
+.card {
+  border: medium solid black;
+  width: 400px;
+}
+.card img {
+  background-color: blanchedalmond;
+  height: 300px;
+  /*para que no deforme la imagen*/
+  object-fit: fill; /*default*/
+  object-fit: cover;
+  object-fit: contain;
+  object-fit: none;
+  /*toma el valor que sea menor de los valores contain y none*/
+  object-fit: scale-down;
+  /*para X y Y*/
+  object-position: left top;
+  object-position: right bottom;
+  object-position: left top;
+  object-position: left center;
+  object-position: 40px center;
+  object-position: -40px center;
+  object-position: 50% 50%;
+}

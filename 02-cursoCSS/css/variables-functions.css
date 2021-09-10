@@ -1,0 +1,68 @@
+/*hace referencia a la etiqueta html, pero tiene mas especificidad mas peso*/
+:root {
+  color: darkgreen;
+  --default-bg-color: skyblue;
+}
+
+html {
+  color: red;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.custom-props-1 {
+  --primary-color: gray;
+  --font-size: 32px;
+  background-color: var(--primary-color);
+}
+/*el alcence de las variables aplican para el mismo y los hijos de donde estan declarados*/
+/*tambien se puede declarar dentro las etiquetas las variables <section class="custom-props-2" style="--border-color:red">*/
+.custom-props-2 {
+  background-color: var(--default-bg-color);
+  border: thin solid var(--border-color);
+  padding: 1rem;
+}
+.custom-props-3 {
+  font-size: var(--font-size);
+  border: thin solid var(--border-color);
+}
+
+.title-props {
+  /*Si por alguna razon no encuentra la variable dentro su escope, el segundo es el valor por defecto que queremos que sea
+  no aplica porque h2 no es su hijo de .custom-props-1*/
+  color: var(--primary-color, orange);
+  /*se puede usar 2 variables porque de mismo nombre porque solo existen en su ambito local, dentro de el mismo y sus hijos
+  ahora se aplica porque esta en su scope*/
+  --primary-color: navy;
+  color: var(--primary-color, orange);
+  background-color: var(--default-bg-color);
+}
+
+/*la funcion url() tambien sirve para llamar archivos externos 
+@import url("otro-hoja.css");
+*/
+
+.ch-10 {
+  --padding-size: 2ch;
+  --num-ch: 10ch;
+  background-color: var(--default-bg-color);
+  padding: var(--padding-size);
+  font-size: 2rem;
+  /*los operadores deben tener espacios ambos lados*/
+  width: calc(var(--num-ch) + var(--padding-size) * 2);
+}
+
+.min-max {
+  background-color: var(--default-bg-color);
+  margin-top: 1rem;
+  width: min(300px, 20vw, 20rem);
+  height: max(200px, 25vh);
+}
+
+h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}

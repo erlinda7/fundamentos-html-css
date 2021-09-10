@@ -1,0 +1,15 @@
+.table {
+  font-size: 3rem;
+  border-collapse: collapse; /*para que se vea como las tablas de word, con las celdas unidas*/
+  border-collapse: separate; /*default*/
+  empty-cells: show; /*default*/
+  empty-cells: hide; /*oculta la celda vacia*/
+}
+
+table,
+td,
+th {
+  border: medium solid black;
+  border-spacing: 0; /*tambien hace como collapse*/
+  border-spacing: 1rem; /*se aplica con border-collapse: separate;*/
+}

@@ -1,0 +1,126 @@
+.color-by-name {
+  background-color: coral;
+  color: rebeccapurple;
+  border: thick solid greenyellow;
+}
+/*
+convertidor de colores en google en el buscador
+rgb to hex
+*/
+/*
+Sistema hexadecimal
+0123456789ABCDEF
+
+Red Green Blue - RGB(medios digitales) vs Cyan MAgenta Yellow Key CMYK -(Medios impresos)
+
+colores en hexadecimal va a ser colores de 6 digitos
+los 2 primeros representan el canal rojo del rgb, el 2do el verde y el 3ro el azul
+#FF6600
+*/
+.color-by-hex {
+  background-color: #ff6600;
+  /*si en el canal los 2 digitos son iguales se puede reducir a un solo digito en cada canal, para ser simplificadas deben ser en las 3 parejas como el de arriba*/
+  background-color: #f60;
+  background-color: #ff6605;
+  /*la opacidad va desde 00 -99 los ultimos dos digitos*/
+  background-color: #00000050;
+  /*en tres digitos la opacidad va desde 1 hasta 9, el ultimo digito, 1 es el 10%*/
+  background-color: #0005;
+  background-color: #00000099;
+  background-color: #00000075;
+  background-color: #00000000;
+  color: #12ac78;
+  border: thick solid #ffffff;
+  border: thick solid #fff;
+  border: thick solid #ff0000;
+  border: thick solid #f00;
+  border: thick solid #00ff00;
+  border: thick solid #0f0;
+  border: thick solid #0000ff;
+  border: thick solid #00f;
+  border: thick solid #000000;
+  border: thick solid #000;
+}
+/*
+sistema RGB
+Acepta 8 bits por canal
+Bit (0/1) 2^8 = 2*2*2*2*2*2*2*2 = 256
+por cada canal de color tenemos valores que van del 0 -255
+*/
+.color-by-rgb {
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 255, 0);
+  background-color: rgb(0, 0, 255);
+  background-color: rgb(0, 0, 0);
+  /*aumentamos a-rgba para opacidada de 0-1 , 1 es el 100%, 75%=0.75*/
+  background-color: rgba(0, 0, 0, 0.75);
+  color: rgb(255, 160, 0);
+  border: thick solid rgb(128, 109, 7);
+}
+
+/*
+Sistema hsl
+HueSaturationLightness (Tono-Saturacion-Luminosidad)
+
+El primer es Hue (Circulo cromatico)
+0º -> red
+60º -> yellow
+120º -> green
+240º ->cyan
+300º - magenta
+
+El segundo valor es la saturacion (intensidad del color)
+0% -> Escala de grises, aunque sea debes poner con su simbolo %,  0% se va a gris
+100% -> color puro
+
+el tercer valor es Lightness (luminosidad del color), si queremos que tienda hacia blanco o cero
+0% -> negro
+100% -> blanco
+*/
+.color-by-hsl {
+  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 50%, 50%);
+  background-color: hsl(0, 100%, 0%);
+  background-color: hsl(240, 100%, 50%);
+  /*opacidad hsla de 0 a 1 , 0 trnasparente*/
+  background-color: hsla(240, 63%, 69%, 0.75);
+  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  border: thick solid hsl(210, 100%, 50%);
+}
+
+/*
+Valor transparent: color transparente es igual a aplicar rgbs(0,0,0,0)
+valor currentColor: Hereda el valor por defecto o asignado de la prpiedad color, del ancestro que tenga definida esta propiedad, busca del ancestro mas cercano al mas alejado
+**/
+.color-transparent-current {
+  background-color: darkmagenta;
+  background-color: currentColor;
+  background-color: transparent;
+  /*hereda del mas cercano o del padre de la section*/
+  /* background-color: currentColor;
+  color: white; */
+  color: olive;
+  border: thick solid currentColor;
+}
+
+.opacity {
+  background-color: orchid;
+  color: navy;
+  border: thick solid black;
+  opacity: 0.5;
+  opacity: 1;
+  opacity: 0;
+  opacity: 0.75;
+}
+.opacity-00 {
+  opacity: 0;
+}
+.opacity-10 {
+  opacity: 0.1;
+}
+.opacity-20 {
+  opacity: 0.2;
+}

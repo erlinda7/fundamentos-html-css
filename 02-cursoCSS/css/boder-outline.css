@@ -1,0 +1,55 @@
+.box {
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 400px;
+  border: thick solid red;
+}
+.border-radius {
+  border-radius: 2rem;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  /*2rem para primera diagonal \ y 4rem segunda diagonal /  */
+  border-radius: 2rem 4rem;
+  /*4rem para segunda diagonal y 0 para abajo-derecha*/
+  border-radius: 2rem 4rem 0;
+  /*manicillas del reloj*/
+  border-radius: 2rem 4rem 2rem 1rem;
+  border-radius: 4rem;
+}
+
+.border-radius-2 {
+  /*para bordes raidus elipticos 2rem en x , 4rem en y
+  antes del slash los valores para X y despues del otro lado valores para Y*/
+  border-radius: 2rem / 4rem;
+  border-radius: 2rem 4rem / 4rem 8rem;
+}
+
+.border-radius-3 {
+  /*la caja debe ser cuadrada para formar un circulo perfecto*/
+  border-radius: 50%;
+}
+.border-radius-4 {
+  width: 400px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/*es como una capa que no forma parte del modelo de caja, aumenta el tamaño de la caja*/
+.outline {
+  color: white;
+  text-align: center;
+  outline-width: 5px;
+  outline-style: dashed;
+  outline-color: chartreuse;
+  outline: thick solid blue;
+  /*  border-width: 20px; */
+  outline-width: 10px;
+  /*espacio que se aleja de la caja hacia afuera */
+  outline-offset: 3rem;
+  /*se aleja hacia adentro*/
+  outline-offset: -3rem;
+}
